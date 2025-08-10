@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 420px;
+    margin: auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.banner-img {
+    width: 100%;
+    max-width: 350px;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+}
+
+.social-item {
+    margin-bottom: 18px;
+}
+
+.dropdown-btn {
+    width: 100%;
+    background: #2b2f4a;
+    border: 2px solid #3f51b5;
+    padding: 14px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.dropdown-btn:hover {
+    background: #3f4c72;
+    transform: translateY(-2px);
+}
+
+.dropdown-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.dropdown-btn span {
+    margin-left: auto;
+}
+
+.dropdown-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    padding-left: 34px;
+    animation: max-height 0.4s ease, opacity 0.4s ease ;
+}
+
+.dropdown-content a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    background: #222;
+    padding: 8px;
+    margin: 3px 0;
+    border-radius: 6px;
+    color: white;
+    transition: background 0.3s;
+}
+
+.dropdown-content.show {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.dropdown-content a img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dropdown-content a:hover {
+    background: #3f4c72;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
